@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Charge Prediction</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <form action="/predict" method="post">
+        <h1>Predict Insurance Charges</h1>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        
+        <label for="bmi">BMI:</label>
+        <input type="number" step="0.1" id="bmi" name="bmi">
+        
+        <label for="children">Children:</label>
+        <input type="number" id="children" name="children">
+        
+        <label for="smoker">Smoker:</label>
+        <select id="smoker" name="smoker">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        
+        <label for="region">Region:</label>
+        <select id="region" name="region">
+            <option value="northeast">Northeast</option>
+            <option value="northwest">Northwest</option>
+            <option value="southeast">Southeast</option>
+            <option value="southwest">Southwest</option>
+        </select>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
